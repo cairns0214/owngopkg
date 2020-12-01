@@ -10,6 +10,9 @@ package lsort
 // @return nums []int "排序后的切片"
 func BubbleSort(nums []int, sortType int) []int {
 	length := len(nums)
+	if length <= 1 {
+		return nums
+	}
 	if sortType == 0 {
 		for i := 0; i < length-1; i++ {
 			for j := 0; j < length-i-1; j++ {
