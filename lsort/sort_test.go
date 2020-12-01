@@ -7,9 +7,9 @@ import (
 
 func TestBubbleSort(t *testing.T) {
 	nums := []int{5, 4, 2, 3, 8}
-	nums = BubbleSort(nums, 0)
+	nums = BubbleSortSmallToLarge(nums)
 	fmt.Println(nums)
 	nums = []int{5, 4, 2, 3, 8}
-	nums = BubbleSort(nums, 1)
+	nums = BubbleSortLargeToSmall(nums)
 	fmt.Println(nums)
 }
